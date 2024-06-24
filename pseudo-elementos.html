@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* Pseudo elementos */
+    div::before{
+        content: ":)";
+    }
+
+    div::after{
+        content: ":(";
+    }
+
+    label{
+        display:  block;
+        margin-top: 1em;
+    }
+
+    input:focus{
+        background-color: lightblue;
+    }
+
+    select:focus{
+        background-color: lightcoral;
+    }
+
+    .joinBtn{
+        width: 10em;
+        height: 5ex;
+        background-image: linear-gradient(135deg, #f34079, #fc894d, #ffff3f);
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+    }
+
+    .joinBtn:active{
+        color: black;
+    }
+</style>
+
+</head>
+<body>
+    <div class="">
+        Tlatoani
+    </div>
+
+    <form>
+        <p>Qué te gustaria ordenar?</p>
+        <label>Nombre Completo: <input name="firstName" type="text" /></label>
+        <label
+          >Opciones:
+          <select name="opciones">
+            <option>Cereza</option>
+            <option>Te verde</option>
+          </select>
+        </label>
+      </form>
+
+      <p>Te gustaria suscribirte a Tlatoani</p>
+      <button class="joinBtn">¡Entra!</button>
+
+</body>
+</html>

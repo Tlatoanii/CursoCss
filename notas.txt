@@ -1,0 +1,32 @@
+Diferencias entre transform y transition en css
+
+Transform:
+    -En css se usan para que los elementos modifiques sus tamaños, escalen, etc
+    - transform : none | transform-functions | initial | inherit;
+    - Trasladar en todos los ejes, escalar, rotar, inclinar, matriz(usar varios valores), perspective
+    - translate: Mover un elemento de un punto A a un punto B: Ejemplo transform: translateX(-20px, +20px); transform: translate(X, Y, Z);
+    - scale: agrandar o reducir de tamaño un elemento con esta propiedad: Ejemplo de scale: transform: scale(0.8, 1.2); transform: scale(X, Y, Z);
+    - skew: sezgar o manipular el comportamiento de un elemento en diagonal: Ejemplo de skew: transform: skew(20deg); transform: skewY(Xdeg, Ydeg);
+    - rotate: rotar o girar un elmento: Ejemplo de rotate: transform: rotate(20deg); transform: rotate(Xdeg, Ydeg, Zdeg);
+    - matrix: Tener varios comportamiento en una sola function
+    - transform: Puede tener varos elementos: transform, scale, rotate, skew
+
+
+TRANFORM ORIGIN
+    - Cambiar el punto de origen de la transfomración
+    - Es tener un contenedor dentro de otro contenedor donde puedes agregar estilos
+
+NUEVAS PROPIEDADES
+    - PERSPECTIVE
+    - Primero se le agrega una perspectiva a la clase contenedora con: perspective: 100px;
+    - TRANSOFORM STYLE
+    - A la clase contenida se le agrega la propiedad: transform-style: preserve-3d; para poder usar 3D
+    - Aplicar todas las transformaciones correspondientes
+
+backface-visibility
+    - Limita el espacio de uso de un contenedor haciendo dos capas, una encima de la otra
+    - Al liberar una, se sobrepone otra, logrando un efecto de superposición
+
+
+NOTAS: 
+Al usar posiciones, el padre va a ser relative y el absolute seran los hijos
